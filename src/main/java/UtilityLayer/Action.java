@@ -7,13 +7,22 @@ import org.openqa.selenium.interactions.Actions;
 import BaseLayer.BaseClass;
 
 public class Action extends BaseClass{
+public static Actions act;
 
 	public static void rightClick() {
 		
 		WebElement wb= driver.findElement(By.name(""));
-		Actions act = new Actions(driver);
+		 act = new Actions(driver);
 		
-		act.contextClick();
+		act.contextClick(wb).build().perform();
 		
+	}
+	
+	public static void click()
+	{
+		WebElement wb1= driver.findElement(By.name(""));
+		 act = new Actions(driver);
+		
+		act.contextClick(wb1).build().perform();;
 	}
 }
