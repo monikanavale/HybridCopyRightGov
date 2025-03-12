@@ -4,7 +4,7 @@ import org.openqa.selenium.Alert;
 
 import BaseLayer.BaseClass;
 
-public class HandleAlter extends BaseClass{
+public class HandleAlert extends BaseClass{
 	public static  Alert alt;
 	public static void ClickOkButtonOnAlert()
 	{
@@ -18,8 +18,10 @@ public class HandleAlter extends BaseClass{
 		return alt.getText();
 	}
 	
+	public static void clickOnCancelButton() {
+		
+		alt.dismiss();
 	
-	
-	
+	}
 
 }
